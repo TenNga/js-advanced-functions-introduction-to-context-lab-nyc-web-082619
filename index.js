@@ -60,11 +60,15 @@ function allWagesFor(record) {
   let totalWages = 0;
   record.timeInEvents.forEach((timeIn)=>{
        totalWages += wagesEarnedOnDate(record,timeIn.date);
-       console.log("Total Wages: ===================================="+totalWages)
+       //console.log("Total Wages: ===================================="+totalWages)
   })
-  
   return totalWages;
-  
+}
+
+function findEmployeeByFirstName(arr,firstName) {
+  arr.find((employee)=>{
+    return employee.firstName === firstName;
+  })
 }
 
 
