@@ -66,8 +66,8 @@ function allWagesFor(record) {
 }
 
 function findEmployeeByFirstName(arr,firstName) {
+  console.log("array employee: ===================================="+arr)
   arr.find((employee)=>{
-    console.log("first Name: ==================="+employee.firstName)
     return employee.firstName === firstName;
   })
 }
